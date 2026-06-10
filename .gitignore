@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Caches e ferramentas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.matplotlib_cache/
+matplotlib_cache/
+
+# Resultados gerados pelo programa
+resultados_viga.csv
+resultado_viga.png
+resultado_viga.pdf
+
+# Arquivos de enunciado e conversões locais
+Avaliação_3.pdf
+Avaliação 3 (jpg)/
+
+# Sistema operacional e IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
