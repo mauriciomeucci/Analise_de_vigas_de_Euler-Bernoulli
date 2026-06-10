@@ -124,10 +124,19 @@ Esses arquivos são resultados de execução e não fazem parte do código-fonte
 .
 ├── Avaliação-3.py
 ├── README.md
+├── LICENSE
 ├── requirements.txt
 ├── .gitignore
 └── .gitattributes
 ```
+
+## Licença
+
+Este projeto não é open source.
+
+Todos os direitos são reservados aos autores. Não é concedida permissão para uso, cópia, modificação, publicação, distribuição, sublicenciamento ou criação de trabalhos derivados sem autorização prévia por escrito dos detentores dos direitos autorais.
+
+Consulte o arquivo `LICENSE` para os termos completos.
 
 ## Observações
 
