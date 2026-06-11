@@ -34,6 +34,12 @@ O script calcula deslocamentos, esforços internos e tensões normais máximas d
   - tabela `.csv` com os resultados;
   - figura `.png`;
   - figura `.pdf`.
+- Interface gráfica em Tkinter com:
+  - entrada organizada de geometria, material, vínculos e cargas;
+  - caso de exemplo carregável por botão;
+  - resumo textual dos resultados;
+  - gráfico Matplotlib embutido;
+  - tabela com os valores numéricos calculados.
 
 ## Método Numérico
 
@@ -58,6 +64,7 @@ sigma_max(x) = |M(x)| zmax / I
 - Python 3.10 ou superior
 - NumPy
 - Matplotlib
+- Tkinter, normalmente incluído na instalação padrão do Python
 
 Instale as dependências com:
 
@@ -67,7 +74,25 @@ python -m pip install -r requirements.txt
 
 ## Como Executar
 
-No terminal, dentro da pasta do projeto:
+### Interface gráfica
+
+Para abrir a interface gráfica:
+
+```bash
+python interface_grafica.py
+```
+
+No Windows PowerShell:
+
+```powershell
+python .\interface_grafica.py
+```
+
+A interface permite preencher os dados da viga, carregar um exemplo automático, executar a análise, visualizar o resumo, consultar a tabela de resultados e navegar pelo gráfico diretamente na janela.
+
+### Terminal
+
+Para executar a versão interativa no terminal, dentro da pasta do projeto:
 
 ```bash
 python Avaliação-3.py
@@ -86,6 +111,8 @@ O programa solicitará os dados da viga em etapas:
 3. vínculos;
 4. cargas;
 5. opção de exibir ou não a janela do Matplotlib.
+
+O arquivo `interface_grafica.py` reutiliza as mesmas estruturas, funções de cálculo e rotinas de exportação de `Avaliação-3.py`. Assim, os resultados obtidos pela interface gráfica e pelo terminal seguem a mesma formulação numérica.
 
 ## Exemplo Automático
 
@@ -109,7 +136,7 @@ Após a execução, o programa cria:
 - `resultado_viga.png`: plotagem final em imagem;
 - `resultado_viga.pdf`: plotagem final em PDF.
 
-Esses arquivos são resultados de execução e não fazem parte do código-fonte versionado.
+Esses arquivos são resultados de execução e não fazem parte do código-fonte versionado. A interface gráfica gera os mesmos arquivos na pasta do projeto.
 
 ## Convenção de Sinais
 
@@ -123,6 +150,7 @@ Esses arquivos são resultados de execução e não fazem parte do código-fonte
 ```text
 .
 ├── Avaliação-3.py
+├── interface_grafica.py
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
